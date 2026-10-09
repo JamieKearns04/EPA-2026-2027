@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Check that an arument was provided
+if [ $# -ne 1 ]; then
+	echo "Usage: $0 <required_cpu_cores>"
+	exit 1
+fi
+
 # Stores the required number of CPU cores
 required_cpu=$1
 
